@@ -1,0 +1,34 @@
+{
+  "algorithm": "Speculative Decoding (Leviathan et al. 2023)",
+  "corpus": "the dog ran . the cat sat . the dog sat . a cat ran . a dog ran . the cat ran . the dog ate . a cat ate . the cat ate .",
+  "K": 4,
+  "max_new_tokens": 50,
+  "n_benchmark_runs": 5,
+  "start_token": "the",
+  "draft_model": {
+    "d_model": 16,
+    "n_layers": 1,
+    "n_heads": 2,
+    "d_ff": 32
+  },
+  "target_model": {
+    "d_model": 64,
+    "n_layers": 4,
+    "n_heads": 4,
+    "d_ff": 128
+  },
+  "naive_ar": {
+    "tokens_per_sec": 1074.722,
+    "elapsed_ms": 46.52,
+    "sample": "cat cat cat ran dog ran ran cat ran ran cat cat ran cat cat cat cat dog cat cat cat cat cat cat cat cat dog cat cat dog dog cat cat cat cat cat cat cat dog dog cat cat cat cat cat cat cat cat cat cat"
+  },
+  "speculative": {
+    "tokens_per_sec": 417.345,
+    "elapsed_ms": 119.8,
+    "acceptance_rate": 0.0476,
+    "avg_accepted_per_run": 8.0,
+    "avg_drafted_per_run": 168.0,
+    "sample": "cat cat cat cat cat cat cat cat cat dog ran cat cat cat cat cat cat ate cat dog cat dog dog cat cat cat cat cat cat cat cat cat dog cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat"
+  },
+  "speedup_ratio": 0.388
+}
