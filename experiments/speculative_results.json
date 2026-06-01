@@ -18,17 +18,17 @@
     "d_ff": 128
   },
   "naive_ar": {
-    "tokens_per_sec": 1074.722,
-    "elapsed_ms": 46.52,
-    "sample": "cat cat cat ran dog ran ran cat ran ran cat cat ran cat cat cat cat dog cat cat cat cat cat cat cat cat dog cat cat dog dog cat cat cat cat cat cat cat dog dog cat cat cat cat cat cat cat cat cat cat"
+    "tokens_per_sec": 2239.327,
+    "elapsed_ms": 22.33,
+    "sample": "cat cat cat ran dog ran ran cat ran cat cat cat dog cat cat cat dog dog sat . . . cat a . a the . . the the . a a a a . cat the the sat sat ran . . a cat . . ."
   },
   "speculative": {
-    "tokens_per_sec": 417.345,
-    "elapsed_ms": 119.8,
-    "acceptance_rate": 0.0476,
-    "avg_accepted_per_run": 8.0,
-    "avg_drafted_per_run": 168.0,
-    "sample": "cat cat cat cat cat cat cat cat cat dog ran cat cat cat cat cat cat ate cat dog cat dog dog cat cat cat cat cat cat cat cat cat dog cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat cat"
+    "tokens_per_sec": 1761.53,
+    "elapsed_ms": 28.38,
+    "acceptance_rate": 0.1933,
+    "avg_accepted_per_run": 21.8,
+    "avg_drafted_per_run": 112.8,
+    "sample": "cat cat dog dog cat cat sat cat dog cat cat cat sat cat ran sat ran dog . . a cat cat sat a . . a a a the the ran . a . cat sat the ran dog the sat sat sat sat dog the . sat"
   },
-  "speedup_ratio": 0.388
+  "speedup_ratio": 0.787
 }

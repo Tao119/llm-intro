@@ -1,0 +1,28 @@
+============================================================
+Speculative Decoding  (Leviathan et al. 2023)
+============================================================
+Corpus length: 36  vocab size: 8
+Vocabulary: ['the', 'dog', 'ran', '.', 'cat', 'sat', 'a', 'ate']
+
+Training draft model  (d_model=16, n_layers=1, n_heads=2) ...
+  [Draft] epoch  100/300  ppl=6.06
+  [Draft] epoch  200/300  ppl=2.02
+  [Draft] epoch  300/300  ppl=7.02
+
+Training target model (d_model=64, n_layers=4, n_heads=4) ...
+  [Target] epoch  100/300  ppl=2.13
+  [Target] epoch  200/300  ppl=1.65
+  [Target] epoch  300/300  ppl=7.43
+
+Benchmark: start='the'  max_new=50  K=4  runs=5
+
+Naive AR   : 2239.33 tok/s   elapsed=22.3 ms
+  sample : cat cat cat ran dog ran ran cat ran cat cat cat dog cat cat cat dog dog sat . . . cat a . a the . . the the . a a a a . cat the the sat sat ran . . a cat . . .
+Speculative: 1761.53 tok/s   elapsed=28.4 ms
+  sample : cat cat dog dog cat cat sat cat dog cat cat cat sat cat ran sat ran dog . . a cat cat sat a . . a a a the the ran . a . cat sat the ran dog the sat sat sat sat dog the . sat
+  accept : 19.33%  avg acc/drafted = 21.8 / 112.8
+
+Speedup: 0.787x
+
+Results saved → /Users/matsumura-tao/sources/imai-lab/llm-intro/experiments/speculative_results.json
+============================================================

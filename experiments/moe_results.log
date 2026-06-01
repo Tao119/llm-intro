@@ -1,0 +1,30 @@
+============================================================
+Mixture-of-Experts Transformer LM
+============================================================
+Corpus length: 36  vocab size: 8
+
+Training dense Transformer ...
+  [Dense] epoch  100/300  ppl=2.18
+  [Dense] epoch  200/300  ppl=1.48
+  [Dense] epoch  300/300  ppl=5.17
+
+Training MoE Transformer ...
+  [MoE] epoch  100/300  ppl=10.16
+  [MoE] epoch  200/300  ppl=6.70
+  [MoE] epoch  300/300  ppl=26.99
+
+=== Perplexity Comparison ===
+  Dense Transformer : 5.17
+  MoE   Transformer : 26.99
+
+=== Expert Utilization ===
+  Expert 0:   9249  (38.5%)  ###########
+  Expert 1:  11778  (49.1%)  ##############
+  Expert 2:   2788  (11.6%)  ###
+  Expert 3:    185  (0.8%)  
+
+  Load-balance variance: 0.038226  (0 = perfectly balanced)
+  Router entropy: 1.0044  (max=1.3863)
+
+Expert utilization chart saved → /Users/matsumura-tao/sources/imai-lab/llm-intro/experiments/moe_utilization.png
+============================================================

@@ -1,0 +1,20 @@
+Saved → /Users/matsumura-tao/sources/imai-lab/llm-intro/ch01/model_landscape.png
+
+| Model                  | Year   | Params (B)   | Architecture     | Notes                               |
+|------------------------|--------|--------------|------------------|-------------------------------------|
+| BERT                   | 2018   | 0.11B        | Encoder-only     | Masked LM + NSP                     |
+| GPT-1                  | 2018   | 0.117B       | Decoder-only     | First GPT, BooksCorpus              |
+| T5                     | 2019   | 11B          | Encoder-Decoder  | Text-to-Text framework              |
+| GPT-2                  | 2019   | 1.5B         | Decoder-only     | 117M→1.5B, web text                 |
+| GPT-3                  | 2020   | 175B         | Decoder-only     | Few-shot learning                   |
+| ChatGPT                | 2022   | 175B         | Decoder + RLHF   | GPT-3.5 + RLHF                      |
+| PaLM                   | 2022   | 540B         | Decoder-only     | 540B, Pathways                      |
+| LLaMA                  | 2023   | 65B          | Decoder-only     | Open weights, Meta                  |
+| GPT-4                  | 2023   | ~1T          | Decoder-only     | Est. ~1T MoE                        |
+| Claude-2               | 2024   | 70B          | Decoder + RLHF   | Constitutional AI                   |
+| Mistral-7B             | 2024   | 7B           | Decoder-only     | Sliding window attn                 |
+| Swallow-7B             | 2024   | 7B           | Decoder-only     | Japanese LLM, TokyoTech             |
+| Gemini-1.5             | 2024   | ~1T          | Decoder-only     | Est. ~1T, 1M ctx                    |
+| Claude-3               | 2024   | 100B         | Decoder + RLHF   | Opus/Sonnet/Haiku                   |
+| LLaMA-3                | 2024   | 70B          | Decoder-only     | Meta, 8B/70B                        |
+| GPT-4o                 | 2024   | 200B         | Multimodal       | Omni: text/image/audio              |

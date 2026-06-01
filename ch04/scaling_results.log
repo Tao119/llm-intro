@@ -1,0 +1,135 @@
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 12497 (\N{KATAKANA LETTER PA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 12521 (\N{KATAKANA LETTER RA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 12513 (\N{KATAKANA LETTER ME}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 12540 (\N{KATAKANA-HIRAGANA PROLONGED SOUND MARK}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 12479 (\N{KATAKANA LETTER TA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 25968 (\N{CJK UNIFIED IDEOGRAPH-6570}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 12486 (\N{KATAKANA LETTER TE}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 12473 (\N{KATAKANA LETTER SU}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 12488 (\N{KATAKANA LETTER TO}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 25613 (\N{CJK UNIFIED IDEOGRAPH-640D}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 22833 (\N{CJK UNIFIED IDEOGRAPH-5931}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 12465 (\N{KATAKANA LETTER KE}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 12522 (\N{KATAKANA LETTER RI}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 12531 (\N{KATAKANA LETTER N}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 12464 (\N{KATAKANA LETTER GU}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 21063 (\N{CJK UNIFIED IDEOGRAPH-5247}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 12392 (\N{HIRAGANA LETTER TO}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 12398 (\N{HIRAGANA LETTER NO}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 38306 (\N{CJK UNIFIED IDEOGRAPH-95A2}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:20: UserWarning: Glyph 20418 (\N{CJK UNIFIED IDEOGRAPH-4FC2}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+Font 'default' does not have a glyph for '\u8fd1' [U+8fd1], substituting with a dummy symbol.
+Font 'default' does not have a glyph for '\u4f3c' [U+4f3c], substituting with a dummy symbol.
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 12486 (\N{KATAKANA LETTER TE}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 12473 (\N{KATAKANA LETTER SU}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 12488 (\N{KATAKANA LETTER TO}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 25613 (\N{CJK UNIFIED IDEOGRAPH-640D}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 22833 (\N{CJK UNIFIED IDEOGRAPH-5931}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 12465 (\N{KATAKANA LETTER KE}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 12540 (\N{KATAKANA-HIRAGANA PROLONGED SOUND MARK}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 12522 (\N{KATAKANA LETTER RI}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 12531 (\N{KATAKANA LETTER N}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 12464 (\N{KATAKANA LETTER GU}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 21063 (\N{CJK UNIFIED IDEOGRAPH-5247}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 12497 (\N{KATAKANA LETTER PA}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 12521 (\N{KATAKANA LETTER RA}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 12513 (\N{KATAKANA LETTER ME}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 12479 (\N{KATAKANA LETTER TA}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 25968 (\N{CJK UNIFIED IDEOGRAPH-6570}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 12392 (\N{HIRAGANA LETTER TO}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 12398 (\N{HIRAGANA LETTER NO}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 38306 (\N{CJK UNIFIED IDEOGRAPH-95A2}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+/Users/matsumura-tao/sources/imai-lab/llm-intro/ch04/scaling_and_prompting.py:21: UserWarning: Glyph 20418 (\N{CJK UNIFIED IDEOGRAPH-4FC2}) missing from font(s) DejaVu Sans.
+  plt.savefig("scaling_law.png", dpi=120)
+Font 'default' does not have a glyph for '\u8fd1' [U+8fd1], substituting with a dummy symbol.
+Font 'default' does not have a glyph for '\u4f3c' [U+4f3c], substituting with a dummy symbol.
+saved: scaling_law.png
+
+============================================================
+プロンプト設計パターン
+============================================================
+
+[Zero-Shot]
+感情分析してください。
+入力: 今日は天気が良くて気持ちいい。
+感情:
+
+[One-Shot]
+感情分析してください。
+例)
+入力: 仕事が忙しくてストレスがたまる。
+感情: ネガティブ
+---
+入力: 今日は天気が良くて気持ちいい。
+感情:
+
+[Few-Shot]
+感情分析してください。
+例1)
+入力: 誕生日パーティーがとても楽しかった。
+感情: ポジティブ
+例2)
+入力: 電車が遅延して遅刻した。
+感情: ネガティブ
+例3)
+入力: 今日は特に何もなかった。
+感情: ニュートラル
+---
+入力: 今日は天気が良くて気持ちいい。
+感情:
+
+[Chain-of-Thought]
+問題: 太郎は3個のりんごを持っていた。花子から2個もらい、次に5個買った。今何個ある？
+考え方: まず最初に3個。花子から2個もらうと3+2=5個。さらに5個買うと5+5=10個。
+答え: 10個
+
+[System + User (ChatGPT形式)]
+System: あなたは日本語の専門家です。丁寧に回答してください。
+User: 「行く」の尊敬語は何ですか？
+Assistant:
+
+============================================================
+アライメント: Helpful / Honest / Harmless
+============================================================
+  役立つ(Helpful): ユーザーの意図を正確に把握し、有益な情報を提供
+  正直(Honest): 知らないことは知らないと言う。ハルシネーションを避ける
+  無害(Harmless): 差別・暴力・違法な内容を生成しない
