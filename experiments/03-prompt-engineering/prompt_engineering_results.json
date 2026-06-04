@@ -1,0 +1,971 @@
+{
+  "summary": {
+    "zero_shot": {
+      "exact_match": 0.5,
+      "token_f1": 0.726051296022833,
+      "rouge_l": 0.6798070211604046
+    },
+    "role_prompted": {
+      "exact_match": 0.55,
+      "token_f1": 0.8066497934229847,
+      "rouge_l": 0.7626199505547332
+    },
+    "chain_of_thought": {
+      "exact_match": 0.5,
+      "token_f1": 0.6781628124954042,
+      "rouge_l": 0.6625734322473453
+    },
+    "few_shot": {
+      "exact_match": 0.7,
+      "token_f1": 0.8290575846982084,
+      "rouge_l": 0.7961458054140981
+    },
+    "self_consistency": {
+      "exact_match": 0.45,
+      "token_f1": 0.7739375814730434,
+      "rouge_l": 0.7218352296726332
+    }
+  },
+  "per_case": [
+    {
+      "question": "高血圧の第一選択薬は何ですか？",
+      "answer": "カルシウム拮抗薬またはARB（アンジオテンシンII受容体拮抗薬）",
+      "category": "薬理",
+      "predictions": {
+        "zero_shot": {
+          "text": "ARB",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.21428571428571425,
+            "rouge_l": 0.17142857142857143
+          }
+        },
+        "role_prompted": {
+          "text": "カルシウム",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.33333333333333337,
+            "rouge_l": 0.2702702702702703
+          }
+        },
+        "chain_of_thought": {
+          "text": "カルシウム、ARB、降圧薬",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.48648648648648657,
+            "rouge_l": 0.4
+          }
+        },
+        "few_shot": {
+          "text": "カルシウム拮抗薬またはARB（アンジオテンシンII受容体拮抗薬）",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "self_consistency": {
+          "text": "カルシウム、ARB",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.47058823529411764,
+            "rouge_l": 0.3902439024390244
+          }
+        }
+      }
+    },
+    {
+      "question": "糖尿病の診断基準における空腹時血糖値は？",
+      "answer": "空腹時血糖126mg/dL以上",
+      "category": "診断",
+      "predictions": {
+        "zero_shot": {
+          "text": "126、空腹時、血糖",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.6666666666666667,
+            "rouge_l": 0.4
+          }
+        },
+        "role_prompted": {
+          "text": "空腹時血糖126mg/dL以上",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "chain_of_thought": {
+          "text": "空腹時血糖126mg/dL以上",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "few_shot": {
+          "text": "空腹時血糖126mg/dL以上",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "self_consistency": {
+          "text": "空腹時血糖126mg/dL以上",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        }
+      }
+    },
+    {
+      "question": "心筋梗塞の典型的な症状を3つ挙げてください。",
+      "answer": "胸痛、冷汗、左肩への放散痛",
+      "category": "症状",
+      "predictions": {
+        "zero_shot": {
+          "text": "胸痛、冷汗、左肩への放散痛",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "role_prompted": {
+          "text": "胸痛、冷汗、放散痛",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.7777777777777778,
+            "rouge_l": 0.8181818181818181
+          }
+        },
+        "chain_of_thought": {
+          "text": "胸痛、冷汗、左肩への放散痛",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "few_shot": {
+          "text": "胸痛、冷汗、左肩への放散痛",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "self_consistency": {
+          "text": "胸痛、冷汗、放散痛",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.7777777777777778,
+            "rouge_l": 0.8181818181818181
+          }
+        }
+      }
+    },
+    {
+      "question": "敗血症のqSOFAスコアの構成要素は？",
+      "answer": "呼吸数≥22/分、意識変容、収縮期血圧≤100mmHg",
+      "category": "スコア",
+      "predictions": {
+        "zero_shot": {
+          "text": "呼吸数≥22/分、意識変容、収縮期血圧≤100mmHg",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "role_prompted": {
+          "text": "呼吸数、意識",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.41379310344827586,
+            "rouge_l": 0.3636363636363636
+          }
+        },
+        "chain_of_thought": {
+          "text": "呼吸数≥22/分、意識変容、収縮期血圧≤100mmHg",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "few_shot": {
+          "text": "呼吸数≥22/分、意識変容、収縮期血圧≤100mmHg",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "self_consistency": {
+          "text": "呼吸数、意識、血圧",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.5161290322580645,
+            "rouge_l": 0.5
+          }
+        }
+      }
+    },
+    {
+      "question": "アナフィラキシーショックの第一選択治療は？",
+      "answer": "エピネフリン（アドレナリン）筋注0.3mg",
+      "category": "治療",
+      "predictions": {
+        "zero_shot": {
+          "text": "エピネフリン（アドレナリン）筋注0.3mg",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "role_prompted": {
+          "text": "エピネフリン（アドレナリン）筋注0.3mg",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "chain_of_thought": {
+          "text": "アドレナリン、筋注",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.5714285714285714,
+            "rouge_l": 0.5333333333333333
+          }
+        },
+        "few_shot": {
+          "text": "エピネフリン（アドレナリン）筋注0.3mg",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "self_consistency": {
+          "text": "エピネフリン（アドレナリン）筋注0.3mg",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        }
+      }
+    },
+    {
+      "question": "CRP上昇が示す主な病態は何ですか？",
+      "answer": "炎症または感染症の存在を示す急性相タンパクの上昇",
+      "category": "検査",
+      "predictions": {
+        "zero_shot": {
+          "text": "炎症または感染症の存在を示す急性相タンパクの上昇",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "role_prompted": {
+          "text": "感染、急性相",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.35714285714285715,
+            "rouge_l": 0.33333333333333337
+          }
+        },
+        "chain_of_thought": {
+          "text": "感染、急性相",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.35714285714285715,
+            "rouge_l": 0.33333333333333337
+          }
+        },
+        "few_shot": {
+          "text": "炎症または感染症の存在を示す急性相タンパクの上昇",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "self_consistency": {
+          "text": "炎症または感染症の存在を示す急性相タンパクの上昇",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        }
+      }
+    },
+    {
+      "question": "肺炎球菌肺炎の抗菌薬第一選択は？",
+      "answer": "アモキシシリンまたはペニシリンG",
+      "category": "治療",
+      "predictions": {
+        "zero_shot": {
+          "text": "ペニシリン",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.5882352941176471,
+            "rouge_l": 0.47619047619047616
+          }
+        },
+        "role_prompted": {
+          "text": "アモキシシリンまたはペニシリンG",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "chain_of_thought": {
+          "text": "アモキシシリン",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.6666666666666666,
+            "rouge_l": 0.6086956521739131
+          }
+        },
+        "few_shot": {
+          "text": "肺炎球菌肺炎の抗菌薬については専門的な判断が必要です",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.057142857142857134,
+            "rouge_l": 0.04761904761904762
+          }
+        },
+        "self_consistency": {
+          "text": "アモキシシリンまたはペニシリンG",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        }
+      }
+    },
+    {
+      "question": "INR延長が示す凝固因子の異常はどれか？",
+      "answer": "外因系凝固因子（第VII因子）または共通経路の異常",
+      "category": "検査",
+      "predictions": {
+        "zero_shot": {
+          "text": "外因系凝固因子（第VII因子）または共通経路の異常",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "role_prompted": {
+          "text": "外因系凝固因子（第VII因子）または共通経路の異常",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "chain_of_thought": {
+          "text": "外因系凝固因子（第VII因子）または共通経路の異常",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "few_shot": {
+          "text": "外因系凝固因子（第VII因子）または共通経路の異常",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "self_consistency": {
+          "text": "外因系凝固因子（第VII因子）または共通経路の異常",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        }
+      }
+    },
+    {
+      "question": "STEMI（ST上昇型心筋梗塞）の治療目標時間は？",
+      "answer": "Door-to-Balloon時間90分以内",
+      "category": "治療",
+      "predictions": {
+        "zero_shot": {
+          "text": "90分、Balloon、Door",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.7407407407407406,
+            "rouge_l": 0.3684210526315789
+          }
+        },
+        "role_prompted": {
+          "text": "90分、Door",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.5217391304347825,
+            "rouge_l": 0.26666666666666666
+          }
+        },
+        "chain_of_thought": {
+          "text": "STEMI（ST上昇については専門的な判断が必要です",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "rouge_l": 0.0
+          }
+        },
+        "few_shot": {
+          "text": "Door-to-Balloon時間90分以内",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "self_consistency": {
+          "text": "Door-to-Balloon時間90分以内",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        }
+      }
+    },
+    {
+      "question": "脳卒中のtPA投与の時間窓は？",
+      "answer": "症状出現から4.5時間以内",
+      "category": "治療",
+      "predictions": {
+        "zero_shot": {
+          "text": "4.5時間、tPA",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.4545454545454546,
+            "rouge_l": 0.4545454545454546
+          }
+        },
+        "role_prompted": {
+          "text": "症状出現から4.5時間以内",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "chain_of_thought": {
+          "text": "tPA、時間窓",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.2,
+            "rouge_l": 0.2
+          }
+        },
+        "few_shot": {
+          "text": "4.5時間、tPA、時間窓",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.4347826086956522,
+            "rouge_l": 0.38461538461538464
+          }
+        },
+        "self_consistency": {
+          "text": "4.5時間、tPA、時間窓",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.4347826086956522,
+            "rouge_l": 0.38461538461538464
+          }
+        }
+      }
+    },
+    {
+      "question": "HbA1cの正常値と糖尿病診断基準値は？",
+      "answer": "正常値6.2%未満、糖尿病診断基準6.5%以上",
+      "category": "診断",
+      "predictions": {
+        "zero_shot": {
+          "text": "正常値6.2%未満、糖尿病診断基準6.5%以上",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "role_prompted": {
+          "text": "6.5、HbA1c、糖尿病",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.4375,
+            "rouge_l": 0.33333333333333337
+          }
+        },
+        "chain_of_thought": {
+          "text": "HbA1c、糖尿病",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.2758620689655173,
+            "rouge_l": 0.25
+          }
+        },
+        "few_shot": {
+          "text": "正常値6.2%未満、糖尿病診断基準6.5%以上",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "self_consistency": {
+          "text": "6.5、HbA1c、糖尿病",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.4375,
+            "rouge_l": 0.33333333333333337
+          }
+        }
+      }
+    },
+    {
+      "question": "ワルファリンの作用機序を説明してください。",
+      "answer": "ビタミンK依存性凝固因子（II、VII、IX、X）の産生を阻害する",
+      "category": "薬理",
+      "predictions": {
+        "zero_shot": {
+          "text": "ビタミンK依存性凝固因子（II、VII、IX、X）の産生を阻害する",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "role_prompted": {
+          "text": "ビタミンK、凝固因子、阻害",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.631578947368421,
+            "rouge_l": 0.5217391304347827
+          }
+        },
+        "chain_of_thought": {
+          "text": "凝固因子",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.2666666666666667,
+            "rouge_l": 0.21621621621621626
+          }
+        },
+        "few_shot": {
+          "text": "ビタミンK、阻害",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.47058823529411764,
+            "rouge_l": 0.3902439024390244
+          }
+        },
+        "self_consistency": {
+          "text": "ビタミンK、凝固因子、阻害",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.631578947368421,
+            "rouge_l": 0.5217391304347827
+          }
+        }
+      }
+    },
+    {
+      "question": "心房細動に対する抗凝固療法の適応を判定するスコアは？",
+      "answer": "CHA2DS2-VAScスコア",
+      "category": "スコア",
+      "predictions": {
+        "zero_shot": {
+          "text": "心房細動に対する抗凝については専門的な判断が必要です",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "rouge_l": 0.0
+          }
+        },
+        "role_prompted": {
+          "text": "CHA2DS2-VAScスコア",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "chain_of_thought": {
+          "text": "CHA2DS2、抗凝固",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.5454545454545454,
+            "rouge_l": 0.5384615384615385
+          }
+        },
+        "few_shot": {
+          "text": "CHA2DS2-VAScスコア",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "self_consistency": {
+          "text": "CHA2DS2、抗凝固",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.5454545454545454,
+            "rouge_l": 0.5384615384615385
+          }
+        }
+      }
+    },
+    {
+      "question": "急性腎障害（AKI）のKDIGO基準を述べてください。",
+      "answer": "血清クレアチニン48時間内に0.3mg/dL以上上昇、または7日以内に基準値の1.5倍以上",
+      "category": "診断",
+      "predictions": {
+        "zero_shot": {
+          "text": "1.5倍",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.1904761904761905,
+            "rouge_l": 0.163265306122449
+          }
+        },
+        "role_prompted": {
+          "text": "血清クレアチニン48時間内に0.3mg/dL以上上昇、または7日以内に基準値の1.5倍以上",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "chain_of_thought": {
+          "text": "血清クレアチニン48時間内に0.3mg/dL以上上昇、または7日以内に基準値の1.5倍以上",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "few_shot": {
+          "text": "血清クレアチニン48時間内に0.3mg/dL以上上昇、または7日以内に基準値の1.5倍以上",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "self_consistency": {
+          "text": "クレアチニン、0.3mg、48時間、1.5倍",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.6666666666666666,
+            "rouge_l": 0.4776119402985074
+          }
+        }
+      }
+    },
+    {
+      "question": "褥瘡の危険因子を3つ述べてください。",
+      "answer": "不動、栄養不良、皮膚の湿潤",
+      "category": "予防",
+      "predictions": {
+        "zero_shot": {
+          "text": "不動、栄養不良、皮膚の湿潤",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "role_prompted": {
+          "text": "不動、栄養、湿潤",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.7777777777777778,
+            "rouge_l": 0.761904761904762
+          }
+        },
+        "chain_of_thought": {
+          "text": "不動、栄養不良、皮膚の湿潤",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "few_shot": {
+          "text": "不動、栄養不良、皮膚の湿潤",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "self_consistency": {
+          "text": "不動、栄養不良、皮膚の湿潤",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        }
+      }
+    },
+    {
+      "question": "DKA（糖尿病性ケトアシドーシス）の診断三徴は？",
+      "answer": "高血糖、代謝性アシドーシス、ケトン血症",
+      "category": "診断",
+      "predictions": {
+        "zero_shot": {
+          "text": "高血糖、アシドーシス、ケトン",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.8571428571428571,
+            "rouge_l": 0.8484848484848484
+          }
+        },
+        "role_prompted": {
+          "text": "高血糖、代謝性アシドーシス、ケトン血症",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "chain_of_thought": {
+          "text": "高血糖、代謝性アシドーシス、ケトン血症",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "few_shot": {
+          "text": "高血糖、代謝性アシドーシス、ケトン血症",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "self_consistency": {
+          "text": "高血糖、ケトン",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.6086956521739131,
+            "rouge_l": 0.5384615384615384
+          }
+        }
+      }
+    },
+    {
+      "question": "オピオイド過量投与の解毒薬は何ですか？",
+      "answer": "ナロキソン（オピオイド受容体拮抗薬）",
+      "category": "薬理",
+      "predictions": {
+        "zero_shot": {
+          "text": "ナロキソン、拮抗薬",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.6153846153846153,
+            "rouge_l": 0.5925925925925926
+          }
+        },
+        "role_prompted": {
+          "text": "ナロキソン（オピオイド受容体拮抗薬）",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "chain_of_thought": {
+          "text": "ナロキソン（オピオイド受容体拮抗薬）",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "few_shot": {
+          "text": "ナロキソン（オピオイド受容体拮抗薬）",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "self_consistency": {
+          "text": "ナロキソン、拮抗薬",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.6153846153846153,
+            "rouge_l": 0.5925925925925926
+          }
+        }
+      }
+    },
+    {
+      "question": "肺塞栓症の診断に使用するD-ダイマーの役割は？",
+      "answer": "陰性的中率が高く除外診断に有用だが、特異性は低い",
+      "category": "検査",
+      "predictions": {
+        "zero_shot": {
+          "text": "D-ダイマー、除外",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.1935483870967742,
+            "rouge_l": 0.12121212121212122
+          }
+        },
+        "role_prompted": {
+          "text": "陰性的中率が高く除外診断に有用だが、特異性は低い",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "chain_of_thought": {
+          "text": "陰性的中率が高く除外診断に有用だが、特異性は低い",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "few_shot": {
+          "text": "D-ダイマー、陰性的中率、除外",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.4444444444444444,
+            "rouge_l": 0.35897435897435903
+          }
+        },
+        "self_consistency": {
+          "text": "陰性的中率が高く除外診断に有用だが、特異性は低い",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        }
+      }
+    },
+    {
+      "question": "小児の発熱に対するアセトアミノフェンの用量は？",
+      "answer": "体重1kgあたり10〜15mg、6時間毎に投与",
+      "category": "薬理",
+      "predictions": {
+        "zero_shot": {
+          "text": "体重1kgあたり10〜15mg、6時間毎に投与",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "role_prompted": {
+          "text": "体重1kgあたり10〜15mg、6時間毎に投与",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "chain_of_thought": {
+          "text": "体重、アセトアミノフェン",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.19354838709677416,
+            "rouge_l": 0.1714285714285714
+          }
+        },
+        "few_shot": {
+          "text": "10〜15mg、アセトアミノフェン",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.4,
+            "rouge_l": 0.39999999999999997
+          }
+        },
+        "self_consistency": {
+          "text": "体重1kgあたり10〜15mg、6時間毎に投与",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        }
+      }
+    },
+    {
+      "question": "心不全の治療薬として推奨されるACE阻害薬の例を挙げてください。",
+      "answer": "エナラプリル、ラミプリル、カプトプリルなどのACE阻害薬",
+      "category": "薬理",
+      "predictions": {
+        "zero_shot": {
+          "text": "エナラプリル、ラミプリル、カプトプリルなどのACE阻害薬",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "role_prompted": {
+          "text": "エナラプリル、ACE阻害薬、カプトプリル",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.8823529411764706,
+            "rouge_l": 0.5833333333333334
+          }
+        },
+        "chain_of_thought": {
+          "text": "エナラプリル、ラミプリル、カプトプリルなどのACE阻害薬",
+          "scores": {
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "rouge_l": 1.0
+          }
+        },
+        "few_shot": {
+          "text": "ACE阻害薬、カプトプリル",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.7741935483870968,
+            "rouge_l": 0.3414634146341463
+          }
+        },
+        "self_consistency": {
+          "text": "ACE阻害薬、カプトプリル",
+          "scores": {
+            "exact_match": 0.0,
+            "token_f1": 0.7741935483870968,
+            "rouge_l": 0.3414634146341463
+          }
+        }
+      }
+    }
+  ]
+}
